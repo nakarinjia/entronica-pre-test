@@ -1,0 +1,67 @@
+<!-- profile section -->
+<div class="profile-header">
+  <div class="cover-image">
+    <!-- Cover Image -->
+    <img
+      src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+      alt="Cover Image"
+    />
+    <p-button label="Edit" size="small" class="overlay-button" icon="pi pi-pencil"></p-button>
+  </div>
+  <div class="profile-info">
+    <!-- Profile Picture with Overlay -->
+    <div class="profile-picture">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUzn7-qinvq-jbUgQWNL-OfnXUFXfxbtwMs6-Utey3A&s"
+        alt="Profile Picture"
+      />
+      <div class="overlay">
+        <p-button icon="pi pi-camera" class="camera-hover-icon" [rounded]="true" severity="secondary"></p-button>
+      </div>
+      
+      <!-- Icon for editing profile picture -->
+    </div>
+    <!-- Profile Name and Description -->
+    <h2>profileName</h2>
+    <p>profileDescription</p>
+  </div>
+</div>
+<!-- user info section -->
+<h2>User Information</h2>
+<div class="grid formgird">
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="username">Username</label>
+    <input pInputText id="username" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="nickname">Nickname</label>
+    <input pInputText id="nickname" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="firstName">First Name</label>
+    <input pInputText id="firstName" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="lastName">Last Name</label>
+    <input pInputText id="lastName" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="position">Position</label>
+    <!-- dropdown -->
+    <input pInputText id="username" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="nationality">Nationality</label>
+    <input pInputText id="nationality" />
+  </div>
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="phone">Phone</label>
+    <p-inputMask mask="(999) 999-9999" [(ngModel)]="value2" placeholder="(0xx) xxx-xxxx" styleClass="w-full"></p-inputMask>
+
+  </div>
+ 
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-6 lg:col-12 xl:col-6">
+    <label for="startingDate">Starting Date</label>
+    <p-calendar styleClass="w-full" [iconDisplay]="'input'" [showIcon]="true" appendTo="body"></p-calendar>
+  </div>
+</div>
