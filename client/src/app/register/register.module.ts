@@ -22,6 +22,7 @@ import { PanelModule } from 'primeng/panel';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { FileUploadModule } from 'primeng/fileupload';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { FileUploadModule } from 'primeng/fileupload';
     PanelModule,
     InputMaskModule,
     CalendarModule,
-    FileUploadModule
+    FileUploadModule,
+    DividerModule
   ],
   exports: [
     RegisterFormComponent,
