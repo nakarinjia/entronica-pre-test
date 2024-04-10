@@ -2,16 +2,11 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const cors = require('cors')
 const mysql = require('mysql2')
-const exphbs = require("express-handlebars")
 
 const app = express();
 
 app.use(cors());
 app.use(bodyparser.json());
-
-// Template engine
-app.engine('hbs', exphbs({extname: '.hbs'}))
-app.set('view engine', 'hbs')
 
 const db = mysql.createConnection({
     host: 'localhost',
