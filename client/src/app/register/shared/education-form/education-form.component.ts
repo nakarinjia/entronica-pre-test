@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class EducationFormComponent {
 
+  events:any = [
+    {year: new Date().getFullYear(),
+      university: 'PSU'
+    },
+    {year: new Date().getFullYear(),
+      university: 'PSU'
+    },
+    {year: new Date().getFullYear(),
+      university: 'PSU'
+    },
+    {year: new Date().getFullYear(),
+      university: 'PSU'
+    },
+    {year: new Date().getFullYear(),
+      university: 'PSU'
+    }
+  ]
+
 }

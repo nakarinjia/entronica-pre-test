@@ -23,6 +23,10 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { FileUploadModule } from 'primeng/fileupload';
 import { DividerModule } from 'primeng/divider';
+import { TimelineModule } from 'primeng/timeline';
+import { SliderModule } from 'primeng/slider';
+import { ChipsModule } from 'primeng/chips';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,11 @@ import { DividerModule } from 'primeng/divider';
     InputMaskModule,
     CalendarModule,
     FileUploadModule,
-    DividerModule
+    DividerModule,
+    TimelineModule,
+    SliderModule,
+    ChipsModule,
+    AutoCompleteModule
   ],
   exports: [
     RegisterFormComponent,

@@ -1,1 +1,14 @@
-<p>experience-form works!</p>
+<!-- contact information -->
+<h2>Experience Information</h2>
+<div class="grid formgird">
+    <p-timeline [value]="events">
+        <ng-template pTemplate="content" let-event>
+            <small class="p-text-secondary">{{ event.year }}</small>
+        </ng-template>
+        <ng-template pTemplate="opposite" let-event>
+            {{ event.university }}
+        </ng-template>
+    </p-timeline>
+</div>
+
+

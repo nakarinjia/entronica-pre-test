@@ -5,7 +5,11 @@
     <label for="address">Address</label>
     <input pInputText id="address" class="w-full"/>
   </div>
-  <!-- copy bmk-thai-address -->
+  <!-- autocomplete componnet suggest then patch -->
+  <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12">
+    <label for="address">Search</label>
+    <p-autoComplete [(ngModel)]="selectedCountry" [showEmptyMessage]="true" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name" [minLength]="1" class="w-full" styleClas="w-full"></p-autoComplete>
+  </div>
   <div class="flex flex-column gap-2 col-12 sm:col-12 md:col-4 lg:col-12 xl:col-4">
     <label for="facebook">Facebook</label>
     <input pInputText id="facebook" />
